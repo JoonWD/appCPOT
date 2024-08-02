@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login CPOT SOFTWARE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+        <h2>CPOT SOFTWARE</h2>
+        <form id="loginForm">
+            <input type="text" id="loginCedula" placeholder="Número de cédula" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+            <button type="button" id="showRegister">Registrarse</button>
+        </form>
+    </div>
+
+    <div class="container" id="registerContainer" style="display: none;">
+        <h2>Nuevo usuario CPOT</h2>
+        <form id="registerForm">
+            <input type="text" id="registerCedula" placeholder="Número de cédula" required>
+            <input type="text" id="registerNombres" placeholder="Nombres" required>
+            <input type="text" id="registerApellidos" placeholder="Apellidos" required>
+            <input type="text" id="registerDireccion" placeholder="Dirección" required>
+            <input type="text" id="registerTelefono" placeholder="Teléfono" required>
+            <input type="text" id="registerCargo" placeholder="Cargo" required>
+            <input type="password" id="registerPassword" placeholder="Contraseña" required>
+            <button type="submit">Registrar usuario</button>
+            <button type="button" id="showLogin">volver a inicio</button>
+        </form>
+    </div>
+
+    <div class="container" id="usersContainer" style="display: none;">
+        <h2>Usuarios Registrados</h2>
+        <ul id="usersList"></ul>
+        <button id="logout">Cerrar sesión</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
